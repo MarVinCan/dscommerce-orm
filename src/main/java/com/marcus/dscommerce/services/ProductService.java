@@ -1,5 +1,7 @@
 package com.marcus.dscommerce.services;
 
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -14,8 +16,6 @@ import com.marcus.dscommerce.entities.Product;
 import com.marcus.dscommerce.repositories.ProductRepository;
 import com.marcus.dscommerce.services.exepitions.DatabaseExeption;
 import com.marcus.dscommerce.services.exepitions.ResourceNotFoundExeption;
-
-import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class ProductService {

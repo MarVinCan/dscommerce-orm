@@ -14,7 +14,7 @@ import com.marcus.dscommerce.dto.ValidationError;
 import com.marcus.dscommerce.services.exepitions.DatabaseExeption;
 import com.marcus.dscommerce.services.exepitions.ResourceNotFoundExeption;
 
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 public class ControllerExceptionHandler {
