@@ -2,9 +2,11 @@ package com.marcus.dscommerce.entities;
 
 import javax.persistence.*;
 
+import org.springframework.security.core.GrantedAuthority;
+
 @Entity
 @Table(name = "tb_role")
-public class Role {
+public class Role implements GrantedAuthority{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,13 +30,13 @@ public class Role {
         this.id = id;
     }
 
-    public String getauthority() {
+    @Override
+    public String getAuthority() {
         return authority;
     }
 
     public void setauthority(String authority) {
         this.authority = authority;
     }
-
     
 }
